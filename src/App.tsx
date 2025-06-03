@@ -1,5 +1,5 @@
 import React from 'react';
-import { Dumbbell, MapPin, Calendar, Users, ChevronDown } from 'lucide-react';
+import { Dumbbell, MapPin, Calendar, Users, ChevronDown, Mail } from 'lucide-react';
 
 function App() {
   return (
@@ -13,13 +13,13 @@ function App() {
             </div>
             <div className="hidden md:flex space-x-8">
               <a href="#about" className="text-gray-900 hover:text-gray-600 px-3 py-2 text-sm font-medium">About</a>
-              <a href="#classes" className="text-gray-900 hover:text-gray-600 px-3 py-2 text-sm font-medium">Classes</a>
+              <a href="#classes" className="text-gray-900 hover:text-gray-600 px-3 py-2 text-sm font-medium">Programs</a>
               <a href="#trainers" className="text-gray-900 hover:text-gray-600 px-3 py-2 text-sm font-medium">Trainers</a>
               <a href="#locations" className="text-gray-900 hover:text-gray-600 px-3 py-2 text-sm font-medium">Locations</a>
             </div>
             <div>
               <button className="bg-black text-white px-6 py-2 rounded-md text-sm font-medium hover:bg-gray-800 transition-colors">
-                Free Assessment
+                Schedule your Assessment
               </button>
             </div>
           </div>
@@ -38,10 +38,10 @@ function App() {
         </div>
         <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-            Not just a gym;<br />your partner in achieving health goals
+            Not just a gym;<br />your partner in achieving fitness goals
           </h1>
           <p className="mt-6 text-xl text-gray-300 max-w-3xl">
-            With over 50 years of combined personal training experience, we're here to help you achieve your fitness goals, whether you're an athlete, senior, or recovering from injury.
+            With over 50 years of combined personal training experience, we're here to help those who are <u>serious</u> about achieving their fitness goals. Experience the perfect blend of enjoyable workouts and tangible progress through our customer-centric philosophy and expert support.
           </p>
           <div className="mt-10">
             <button className="bg-white text-black px-8 py-3 rounded-md text-lg font-medium hover:bg-gray-100 transition-colors">
@@ -97,7 +97,7 @@ function App() {
           </div>
           <div className="mt-20 grid gap-16 lg:grid-cols-2">
             <div className="flex flex-col items-center">
-              <img src="/mark.jpg" alt="Mark Cuviello" className="w-48 h-48 rounded-full object-cover" />
+              <img src="public/mark.png" alt="Mark Cuviello" className="w-48 h-48 rounded-full object-cover" />
               <h3 className="mt-6 text-xl font-medium text-gray-900">Mark Cuviello</h3>
               <p className="text-gray-600">Owner</p>
               <div className="mt-4 space-y-2">
@@ -107,9 +107,16 @@ function App() {
                 <p className="text-sm text-gray-600">TABATA Bootcamp Instructor</p>
                 <p className="text-sm text-gray-600">TRX Certified</p>
               </div>
+              <a 
+                href="mailto:mark@fitnessrxworkout.com" 
+                className="mt-4 flex items-center justify-center gap-2 bg-gray-200 hover:bg-gray-300 text-gray-800 px-4 py-2 rounded-md transition-colors"
+              >
+                <Mail className="h-4 w-4" />
+                Email Mark
+              </a>
             </div>
             <div className="flex flex-col items-center">
-              <img src="/stephanie.jpg" alt="Stephanie Booze" className="w-48 h-48 rounded-full object-cover" />
+              <img src="public/stephanie.png" alt="Stephanie Booze" className="w-48 h-48 rounded-full object-cover" />
               <h3 className="mt-6 text-xl font-medium text-gray-900">Stephanie Booze</h3>
               <p className="text-gray-600">General Manager</p>
               <div className="mt-4 space-y-2">
@@ -119,6 +126,13 @@ function App() {
                 <p className="text-sm text-gray-600">TABATA Bootcamp Instructor</p>
                 <p className="text-sm text-gray-600">ACE Certified</p>
               </div>
+              <a 
+                href="mailto:stephanie.fitnessrx@gmail.com" 
+                className="mt-4 flex items-center justify-center gap-2 bg-gray-200 hover:bg-gray-300 text-gray-800 px-4 py-2 rounded-md transition-colors"
+              >
+                <Mail className="h-4 w-4" />
+                Email Stephanie
+              </a>
             </div>
           </div>
         </div>
@@ -156,4 +170,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
